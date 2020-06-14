@@ -63,15 +63,13 @@ const loadTasks = (url, name, progress) => new Promise((resolve, reject) => {
   const matches = [...await loadLessons(sfsid)];
   const promises = [];
   const progress = document.querySelector('#progress');
-  let index = 0;
 
-  for (; index < matches.length; index += 1) {
+  progress.max = matches.length + 1;
+
+  for (let index = 0; index < matches.length; index += 1) {
     const [_, url, name] = matches[index];
     promises[index] = loadTasks(url, name, progress);
   }
-
-  progress.setAttribute('max', index + 1);
-  progress.value = 2;
 
   Promise.all(promises).then((response) => {
     const lessons = document.querySelector('#lessons');
