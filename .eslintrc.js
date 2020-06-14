@@ -12,5 +12,7 @@ module.exports = {
     ecmaVersion: 11,
   },
   rules: {
+    'no-alert': 'off',
+    'no-console': ['warn', { allow: ['log'] }],
   },
 };
