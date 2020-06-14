@@ -14,5 +14,6 @@ module.exports = {
   rules: {
     'no-alert': 'off',
     'no-console': ['warn', { allow: ['log'] }],
+    'no-unused-vars': ['error', { varsIgnorePattern: '_', argsIgnorePattern: 'reject' }],
   },
 };
