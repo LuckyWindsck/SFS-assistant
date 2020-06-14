@@ -1,0 +1,17 @@
+{
+  "name": "sfs-assistant",
+  "version": "1.0.0",
+  "description": "SFC-SFSを使いやすくするChrome拡張機能です。",
+  "main": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namosuke/SFS-assistant.git"
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/namosuke/SFS-assistant/issues"
+  },
+  "homepage": "https://github.com/namosuke/SFS-assistant#readme"
+}
