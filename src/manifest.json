@@ -1,12 +1,16 @@
 {
-  "description": "SFC-SFSの補助機能を提供します",
-  "name": "SFSアシスタント",
   "manifest_version": 2,
+  "name": "SFSアシスタント",
   "version": "1.0.0",
+  "description": "SFC-SFSの補助機能を提供します",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
     "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "未提出の課題一覧"
   },
   "content_scripts": [
     {
@@ -45,10 +49,6 @@
       "all_frames": true
     }
   ],
-  "browser_action": {
-    "default_popup": "popup.html",
-    "default_title": "未提出の課題一覧"
-  },
   "permissions": [
     "storage"
   ]
