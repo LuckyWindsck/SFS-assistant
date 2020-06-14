@@ -64,7 +64,7 @@ const loadTasks = (url, name, progress) => new Promise((resolve, reject) => {
   const promises = [];
   const progress = document.querySelector('#progress');
 
-  progress.max = matches.length + 1;
+  progress.max = matches.length;
 
   for (let index = 0; index < matches.length; index += 1) {
     const [_, url, name] = matches[index];
