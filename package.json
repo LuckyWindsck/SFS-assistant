@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "SFC-SFSを使いやすくするChrome拡張機能です。",
   "main": "",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint --ext .js --fix src/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/namosuke/SFS-assistant.git"
