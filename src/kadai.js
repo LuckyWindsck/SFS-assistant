@@ -50,6 +50,8 @@ if (reportTextElement) {
   textCounterElement.id = 'textCounter';
   reportTextElement.parentNode.insertBefore(textCounterElement, reportTextElement.nextSibling);
 
+  textCounterElement.innerHTML = '0 文字';
+
   document.addEventListener('keyup', () => {
     const wordCount = reportTextElement.value.length;
     textCounterElement.innerHTML = `${wordCount} 文字`;
